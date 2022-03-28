@@ -1,5 +1,12 @@
 # FreeCodeCamp: Responsive Web Design Certificate
 
+- Content:
+  - [Tribute Page](#1-first-project-build-a-tribute-page)
+  - [Survey Form](#2-second-project-build-a-survey-form)
+  - [Product Landing Page](#3-third-project-build-a-product-landing-page)
+  - [Technical Documentation Page](#4-fourth-project-build-a-technical-documentation-page)
+  - [Personal Portfolio Webpage](#5-second-project-build-a-personal-portfolio-webpage)
+
 ## 1. First Project: Build a Tribute Page
 Fulfill the below user stories and get all of the tests to pass.
 
