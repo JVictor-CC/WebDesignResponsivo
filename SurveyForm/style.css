@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #333;
+    background: #fff;
+}
+
+#container{
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+#title{
+    margin: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#description{
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#survey-form{
+    width: 100%;
+    margin: 20px auto;
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #ccc;
+}
+
+#name-label, #email-label, #number-label, #country-label, #age-label, #newsletter-label, #situation-label, #frameworks-label, #languages-label, #textarea-label{
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#name, #email, #age, #number, textarea, select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #ccc;
+}
+
+.radio-labels{
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.radio-labels input{
+    
+}
+
+.checkbox-labels{
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.red-asterisk{
+    color: red;
+}
+
+.optional{
+    font-size: 12px;
+    color: #999;
+}

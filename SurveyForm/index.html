@@ -4,11 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main id="container">
+        <h1 id="title">survey form</h1>
+        <p id="description">here goes the description of the survey</p>
+        
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">what's your name?<i class="red-asterisk">*</i></label> 
+            <input type="text" name="name" id="name" required>
+            
+            <br>
 
+            <label for="email" id="email-label">what email address can we reach you at?<i class="red-asterisk">*</i></label> 
+            <input type="email" name="email" id="email" required>
+            
+            <br>
+
+            <label for="age" id="age-label">
+                how old are you? <i class="optional">(optional)</i></label>
+            <input type="number" name="age" id="age" min="10" max="99">
+            
+            <br>
+
+            <label for="number" id="number-label">What's your phone number? <i class="optional">(optional)</i> </label>
+            <input type="tel" name="number" id="number">
+
+            <br>
+
+            <label for="dropdown" id="country-label">lastly, what country do you live in?<i class="red-asterisk">*</i></label>
+            <select name="dropdown" id="dropdown">
+                <option disabled selected value="">select country</option>
+                <option value="australia">Australia</option>
+                <option value="brazil">Brazil</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <br>
+
+            <label id="situation-label">What is your current professional situation?<i class="red-asterisk">*</i></label>
+            <br>
+            
+            <label class="radio-labels" for="employed"><input type="radio" name="situation" id="employed" value="employed"> Employed</label>
+
+            
+            <label class="radio-labels" for="unemployed"><input type="radio" name="situation" id="unemployed" value="unemployed"> Unemployed</label>
+
+            
+            <label class="radio-labels" for="freelancer"><input type="radio" name="situation" id="freelancer" value="freelancer"> Freelancer</label>
+
+            
+            <label class="radio-labels" for="student"><input  type="radio" name="situation" id="student" value="student"> Student</label>
+
+            
+            <label class="radio-labels" for="other"><input type="radio" name="situation" id="other" value="other"> Other</label>
+            
+            <br>
+
+            <label for="" id="languages-label">Programming Languages / Languages:<i class="red-asterisk">*</i></label>
+     
+            <label class="checkbox-labels" for="html"><input type="checkbox" name="html" id="html" value="html"> HTML</label>
+
+            <label class="checkbox-labels" for="css"><input type="checkbox" name="css" id="css" value="css"> CSS</label>
+
+            <label class="checkbox-labels" for="javaScript"><input type="checkbox" name="javaScript" id="javaScript" value="javaScript"> JavaScript</label>
+
+            <br>
+
+            <label id="frameworks-label">Frameworks:<i class="red-asterisk">*</i></label>
+            
+            <label class="checkbox-labels" for="react"><input type="checkbox" name="react" id="react" value="react"> React</label>
+
+            <label class="checkbox-labels" for="angular"><input type="checkbox" name="angular" id="angular" value="angular"> Angular</label>
+
+            <label class="checkbox-labels" for="vue"><input type="checkbox" name="vue" id="vue" value="vue"> Vue</label>
+            
+            <br>
+
+            <label for="textarea" id="textarea-label">Notes, questions and suggestions: <i class="optional">(optional)</i></label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </form>
     </main>
 </body>
 </html>
