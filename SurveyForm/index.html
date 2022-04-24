@@ -8,24 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main id="container">
+    <main>
         <h1 id="title">survey form</h1>
         <p id="description">here goes the description of the survey</p>
         
         <form action="" id="survey-form">
-            <label for="name" id="name-label">what's your name?<i class="red-asterisk">*</i></label> 
-            <input type="text" name="name" id="name" required>
+            <label for="name" id="name-label">What's your name?<i class="red-asterisk">*</i></label> 
+            <input type="text" name="name" id="name" placeholder="João Victor Souza" required>
             
             <br>
 
-            <label for="email" id="email-label">what email address can we reach you at?<i class="red-asterisk">*</i></label> 
-            <input type="email" name="email" id="email" required>
+            <label for="email" id="email-label">What email address can we reach you at?<i class="red-asterisk">*</i></label> 
+            <input type="email" name="email" id="email" placeholder="example@mail.com" required>
             
             <br>
 
-            <label for="age" id="age-label">
-                how old are you? <i class="optional">(optional)</i></label>
-            <input type="number" name="age" id="age" min="10" max="99">
+            <label for="age" id="age-label">How old are you?<i class="red-asterisk">*</i></label>
+            <input type="number" name="age" id="age" placeholder="'23'" min="18" max="99">
             
             <br>
 
@@ -34,7 +33,7 @@
 
             <br>
 
-            <label for="dropdown" id="country-label">lastly, what country do you live in?<i class="red-asterisk">*</i></label>
+            <label for="dropdown" id="country-label">What country do you live in?<i class="red-asterisk">*</i></label>
             <select name="dropdown" id="dropdown">
                 <option disabled selected value="">select country</option>
                 <option value="australia">Australia</option>
@@ -45,9 +44,10 @@
             </select>
             
             <br>
+            <hr>
 
             <label id="situation-label">What is your current professional situation?<i class="red-asterisk">*</i></label>
-            <br>
+            
             
             <label class="radio-labels" for="employed"><input type="radio" name="situation" id="employed" value="employed"> Employed</label>
 
@@ -75,18 +75,32 @@
 
             <br>
 
-            <label id="frameworks-label">Frameworks:<i class="red-asterisk">*</i></label>
+            <label id="frameworks-label">Frameworks/Libraries:<i class="red-asterisk">*</i></label>
             
             <label class="checkbox-labels" for="react"><input type="checkbox" name="react" id="react" value="react"> React</label>
 
             <label class="checkbox-labels" for="angular"><input type="checkbox" name="angular" id="angular" value="angular"> Angular</label>
 
             <label class="checkbox-labels" for="vue"><input type="checkbox" name="vue" id="vue" value="vue"> Vue</label>
+
+            <label class="checkbox-labels" for="svelte"><input type="checkbox" name="svelte" id="svelte" value="svelte"> Svelte</label>
             
+            <label class="checkbox-labels" for="boiler-plate"><input type="checkbox" name="boiler-plate" id="boiler-plate" value="boiler-plate"> HTML5 Boiler Plate</label>
+
+            <label class="checkbox-labels" for="tailwind-css"><input type="checkbox" name="tailwind-css" id="tailwind-css" value="tailwind-css"> Tailwind CSS</label>
+
+            <label class="checkbox-labels" for="bootstrap"><input type="checkbox" name="bootstrap" id="bootstrap" value="bootstrap"> Bootstrap</label>
+            
+            <label class="checkbox-labels" for="other-framework"><input type="checkbox" name="other-framework" id="other-framework" value="other-framework">  Other</label>
+
+
             <br>
+            <hr>
 
             <label for="textarea" id="textarea-label">Notes, questions and suggestions: <i class="optional">(optional)</i></label>
             <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+
+            <input id="submit" type="submit" value="Submit">
         </form>
     </main>
 </body>

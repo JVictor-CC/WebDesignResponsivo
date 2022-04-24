@@ -6,66 +6,160 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #333;
-    background: #fff;
 }
 
-#container{
-    width: 800px;
-    margin: auto;
-    padding: 20px;
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(115deg, rgba(25, 37, 55, 0.8) , rgba(25, 37, 55, 0.8)), url(images/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+main{
+    width: 100%;
 }
 
 #title{
     margin: 20px;
     font-size: 40px;
     font-weight: bold;
+    color: #fff;
     text-align: center;
+    text-transform: capitalize;
+    text-shadow: 0 0 5px #000;
 }
 
 #description{
     margin: 20px;
     font-size: 20px;
     text-align: center;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
 }
 
 #survey-form{
-    width: 100%;
-    margin: 20px auto;
-    padding: 40px;
+    width: 80%;
+    max-width: 1000px;
+    min-width: 350px;
+    margin:  0 auto 50px;
+    padding: 30px 40px;
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 8px #ccc;
+    box-shadow: 0 0 8px rgb(27, 27, 27);
 }
 
-#name-label, #email-label, #number-label, #country-label, #age-label, #newsletter-label, #situation-label, #frameworks-label, #languages-label, #textarea-label{
+#name-label, #email-label, #number-label, #country-label, #age-label, #newsletter-label, #situation-label,.radio-labels, #frameworks-label, #languages-label, .checkbox-labels, #textarea-label, #submit{
     display: block;
     font-size: 20px;
-    margin: 10px 0;
+    margin: 20px 0 8px 0;
 }
 
 #name, #email, #age, #number, textarea, select{
     width: 100%;
-    padding: 10px;
+    padding: 10px 0;
+    padding-left: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 8px #ccc;
-}
-
-.radio-labels{
-    display: block;
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.radio-labels input{
-    
+    font-size: 16px;
 }
 
 .checkbox-labels{
-    display: block;
-    font-size: 20px;
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    background-color: lightgray;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    border: solid 1px gray;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="checkbox"]::after{
+    content: "\2714";
+    color: #fff;
+    font-weight: bold;
+    display: none;
+}
+
+input[type="checkbox"]:hover{
+    background-color: gray;
+    transition: 0.3s;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #192537;
+}
+
+input[type="checkbox"]:checked::after{
+    display: flex;
+}
+
+.radio-labels{
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"]{
+    appearance: none;
+    background-color: lightgray;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    border: solid 2px gray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+input[type="radio"]:hover{
+    background-color: gray;
+    transition: 0.3s;
+}
+
+input[type="radio"]:checked{
+    background-color: #192537;
+    border-color: #192537;
+}
+
+
+
+#submit{
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s
+}
+
+#submit:hover{
+    background: #000;
+    transition: 0.5s
 }
 
 .red-asterisk{
@@ -75,4 +169,10 @@ body{
 .optional{
     font-size: 12px;
     color: #999;
+}
+
+hr{
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
 }
