@@ -56,13 +56,13 @@ main{
     box-shadow: 0 0 8px rgb(27, 27, 27);
 }
 
-#name-label, #email-label, #number-label, #country-label, #age-label, #newsletter-label, #situation-label,.radio-labels, #frameworks-label, #languages-label, .checkbox-labels, #textarea-label, #submit{
+#name-label, #email-label, #number-label, #country-label, #tel-label, #newsletter-label, #situation-label,.radio-labels, #frameworks-label, #languages-label, .checkbox-labels, #textarea-label, #submit{
     display: block;
     font-size: 20px;
     margin: 20px 0 8px 0;
 }
 
-#name, #email, #age, #number, textarea, select{
+#name, #email, #tel, #number, textarea, select{
     width: 100%;
     padding: 10px 0;
     padding-left: 5px;
