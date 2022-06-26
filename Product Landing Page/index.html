@@ -11,32 +11,140 @@
 </head>
 <body class="flex">
     <header class="flex" id="header">
-
+        <div style="flex: 1; margin-left: 50px;">
+            <img id="header-img" src="images/LOGO.png" alt="logo">
+        </div>
+        
         <nav id="nav-bar">
             <ul class="flex" id="menu">
                 <li><a class="nav-link" href="#product">Product</a></li>
                 <li><a class="nav-link" href="#features"> Features</a></li>
                 <li><a class="nav-link" href="#pricing">Pricing</a></li> 
                 <li><a class="nav-link" href="#how-it-works">How it works</a></li> 
-                <li><a class="nav-link" href="#footer">Contact</a></li>           
+                <li><a class="nav-link" href="#contact">Contact</a></li>           
             </ul>
         </nav> 
-        
-        <img id="header-img" src="" alt="logo" width="200px">
-    
+
+        <div style="flex: 1; text-align: right;"><button class="buy-btn">Buy Now</button></div>
     </header>
 
     <main>
 
         <section id="product">
-
+            <div class="product-description">
+                <h1>the Most Popular Studio, Gaming & Everyday Headphones.</h1>
+            </div>
         </section>
+
         <section id="features">
-
+            <h1 class="title">Features</h1>
+            <hr>
+            <div class="feature-flex">
+                <div class="feature-basis">
+                    
+                    <div class="feature flex">
+                        <img src="images/feature-double-mic.webp" alt="" width="90px">
+                        <div>
+                            <h2>Two built-in microphones.</h2>
+                            <p>Make sure your friends hear you online through the two built-in microphones, which are optimally positioned to capture your voice perfectly, with advanced noise-canceling technology.</p>
+                        </div>
+                        
+                    </div> 
+                    <div class="feature flex">
+                        <img src="images/feature-easy-control.webp" alt="" width="90px" >
+                        <div>
+                            <h2>Easy to use controls.
+                            </h2>
+                            <p>Adjust your setup as you play with the built-in mute, volume and audio buttons. Easily check how your friends are listening to you with the dedicated microphone monitoring button.</p>
+                        </div>
+                    </div>  
+                    <div class="feature flex">
+                        <img src="images/feature-conector.png" alt="" width="90px" >
+                        <div>
+                            <h2>3.5mm connector.</h2>
+                            <p>Simply connect the headset to your mobile devices with the 3.5mm jack audio cable.</p>
+                        </div>
+                    </div> 
+                    <div class="feature flex">
+                        <img src="images/feature-bluetooth2.png" alt="" width="90px" >
+                        <div>
+                            <h2>Bluetooth</h2>
+                            <p>Enjoy up to 12 hours of cordless use thanks to the built-in rechargeable battery. Use the included adapter to connect to PS5 and PS4™ consoles, as well as compatible Windows and macOS® computers.</p>
+                        </div>                  
+                    </div>   
+                    
+                </div>
+                <div class="feature-img">
+                    <img src="images/features-image.jpg" alt="" width="100%">
+                </div>
+            </div>
         </section>
+
         <section id="pricing">
+            <h1 class="title">Pricing</h1>
+            <hr>
 
+            <div class="pricing-content">
+                <div class="pricing-products">
+                    <img src="images/orange.png" alt="" width="100%">
+                    <div class="flex">
+                        <div>
+                            <p>ATH-M50X Orange</p>
+                            <p>$300.00</p>
+                            <div>
+                                <p id="star">&#9733; &#9733; &#9733; &#10032; &#10032;</p>
+                            </div>
+                        </div> 
+                        <button class="buy-btn">Buy now</button>   
+                    </div>
+                    
+                </div>
+                
+                <div class="pricing-products">
+                    <img src="images/black.png" alt="" width="100%">
+                    <div class="flex">
+                        <div>
+                            <p>ATH-M50X Black</p>
+                            <p>$350.00</p>
+                            <div>
+                                <p id="star">&#9733; &#9733; &#9733; &#9733; &#10032;</p>
+                            </div>
+                        </div> 
+                        <button class="buy-btn">Buy now</button>   
+                    </div>
+                </div>
+
+                <div class="pricing-products">
+                    <img src="images/white.png" alt="" width="100%">
+                    <div class="flex">
+                        <div>
+                            <p>ATH-M50X White</p>
+                            <p>$350.00</p>
+                            <div>
+                                <p id="star">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                            </div>
+                        </div> 
+                        <button class="buy-btn">Buy now</button>   
+                    </div>
+                </div>
+
+                <div class="pricing-products">
+                    <img src="images/purple.jpg" alt="" width="100%">
+                    <div class="flex">
+                        <div>
+                            <p>ATH-M50X Purple</p>
+                            <p>$320.00</p>
+                            <div>
+                                <p id="star">&#9733; &#9733; &#9733; &#9733; &#10032;</p>
+                            </div>
+                        </div> 
+                        <button class="buy-btn">Buy now</button>   
+                    </div>
+                </div>
+
+            </div>
         </section>
+
         <section id="how-it-works">
             <div id="video">
 
@@ -48,38 +156,48 @@
             </form>
         </section>
 
+        
+        <section class="flex" id="contact">
+            <div class="col-contact">
+                <h3>Download our APP</h3>
+                <a href="#"><img src="images/app-store.png" alt="App store link" width="130"></a>
+                <br>
+                <a href="#"><img src="images/play-store.png" alt="Play store link" width="130"></a>
+            </div>
+            <div class="col-contact">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">exemplo</a></li>
+                    <li><a href="#">exemplo</a></li>
+                    <li><a href="#">exemplo</a></li>
+                </ul>
+            </div>
+            <div class="col-contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Tel: (21) 34567-8910</li>
+                    <li>Email: contacttunein@email.com</li>
+                </ul>
+            </div>
+            <div class="col-contact">
+                <form>
+                    <h3>Subscribe to our Newsletter</h3>
+                    <input type="email" placeholder="Exemple@email.com" required>
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
     </main>
 
-    <footer class="flex" id="footer">
-        <div class="col-footer">
-            <h3>Download our APP</h3>
-            <a href="#"><img src="images/app-store.png" alt="App store link" width="130"></a>
-            <br>
-            <a href="#"><img src="images/play-store.png" alt="Play store link" width="130"></a>
-        </div>
-        <div class="col-footer">
-            <h3>Links úteis</h3>
-            <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">exemplo</a></li>
-                <li><a href="#">exemplo</a></li>
-                <li><a href="#">exemplo</a></li>
-            </ul>
-        </div>
-        <div class="col-footer">
-            <h3>Contact</h3>
-            <ul>
-                <li>Tel: (21) 34567-8910</li>
-                <li>Email: contactcomp@uff.com</li>
-            </ul>
-        </div>
-        <div class="col-footer">
-            <form>
-                <h3>Subscribe to our Newsletter</h3>
-                <input type="email" placeholder="Exemple@email.com" required>
-                <input type="submit">
-            </form>
-        </div>
-    </footer>
+    
+
+<script>
+    const header = document.getElementById('header');
+
+    window.addEventListener('scroll', function() {
+        header.classList.toggle('scroll', scrollY >0);
+    });
+</script>
 </body>
 </html>
